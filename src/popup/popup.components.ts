@@ -32,7 +32,7 @@ export default class PopupComponentController {
     }
   
     $onInit():void { 
-      this.text = 'Popup'  
+      console.log("Popup"); 
     }
 
 
