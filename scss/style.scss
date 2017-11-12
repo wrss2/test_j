@@ -7,6 +7,10 @@ h1,h2,h3,h4,h5,h6{
   color:#424242;
 }
 
+.form-group {
+    margin-bottom: 0.4rem;
+}
+
 button:hover{
   cursor: pointer;
 }
@@ -23,9 +27,16 @@ button:hover{
   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 49%, rgba(248,248,248,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 49%, rgba(248,248,248,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
-  color:#6d6d6d;
+  color: #969696;
 
 }
+
+.btn-secondary.btn-lg{
+  color: #666666;
+  border: 2px solid #cbd0d8;
+  font-size: 1.45rem;
+}  
+
 .btn-info {
   color: #fff;
   background-color: #268aff;
@@ -46,10 +57,17 @@ button:hover{
     border-color: #3387e0;
   }
 }
+
+
 .btn{
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+  &.btn-lg{
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+  }
 }
 
 #main-nav {
@@ -61,7 +79,7 @@ button:hover{
   border-radius: 0px;
   background-color: #fff;
   border-bottom: 1px solid #e7e7e7;
-  color:#5b6883;
+  color:#2b4886;
   z-index: 9;
   position: relative;
   font-size: 1.2rem;
@@ -81,10 +99,10 @@ button:hover{
 
 #left_column{
   img.app_icon{
-    height: 304px;
+    height: 308px;
     position: absolute;
     bottom: 40px;
-    right: -76px;
+    right: -80px;
   }
   overflow: hidden;
   border-right:1px solid #e7e7e7;
@@ -116,17 +134,21 @@ button:hover{
 
 #right_column{
   height: 91vh; 
+  padding-left: 30px;
+  padding-right: 30px;
   form{
     margin-top: 45px;
-    color:#999999;
+    color: #797979;
     select{
       color:#000; 
     }
     label{
       text-transform: uppercase;
-      color:#748096;
+      color: #55637f;
       font-weight: bold;
       margin-right: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 4px;
       
     }
     input{
@@ -149,6 +171,8 @@ button:hover{
       margin-top: -1rem;
       img{
         margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
       }
   }
 
@@ -163,19 +187,7 @@ button:hover{
   -moz-border-radius: 25px;
 }
 
-group-component, user-component, avatar-component {
-  form{
-    margin-top: 30px !important;
-  }
-}
-submit-component {
-  form{
-    margin-top: 30px !important;
-    label{
-      color:#b1b1b1 !important;
-    }
-  }
-}
+
 
 
 .popup_main{
@@ -199,7 +211,7 @@ submit-component {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
-    color:#b1b1b1;
+    color:#666666;
     font-size: 1.3rem;
     position: relative;
 
@@ -211,7 +223,7 @@ submit-component {
 
     header{
       text-transform: capitalize;
-      border-bottom: 1px solid #d7d7d7;
+      border-bottom: 2px solid #d7d7d7;
       color: #656565;
       font-size: 1.8rem;
       padding: 55px 50px;
@@ -219,7 +231,7 @@ submit-component {
     }
     section{
       padding: 55px 60px;
-      background-image: linear-gradient(to bottom, rgba(231, 231, 231, 0.4) 0%, transparent 5px, #FFF 0px, #FFF 0%);
+      background-image: linear-gradient(to bottom, rgba(231, 231, 231, 0.6) 0%, transparent 7px, #FFF 0px, #FFF 0%);
     }
     footer{
       position: absolute;
@@ -245,9 +257,9 @@ submit-component {
   display: inline-block;
   margin: 0;
   margin-right: 10px;
-}
-
-.inputfile + label {
+  color: #666666;
+  border: 2px solid #cbd0d8;
+  font-size: 1.45rem;
 	cursor: pointer; 
 }
 .avatar_photo{
@@ -258,4 +270,18 @@ submit-component {
 .error{ 
   color: red;
   padding-left: 5px;
+}
+
+group-component, user-component, avatar-component {
+  form{
+    margin-top: 30px !important;
+  }
+}
+submit-component {
+  form{
+    margin-top: 30px !important;
+    label{
+      color:#b1b1b1 !important;
+    }
+  }
 }
