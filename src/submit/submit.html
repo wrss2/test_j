@@ -1,0 +1,18 @@
+<form>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input value="{{email}}" readonly type="text" class="form-control" id="email" aria-describedby="email" placeholder="[Required]">
+    </div>
+    <div class="form-group">
+      <label for="group">User Group</label>
+      <input type="text" value="{{group}}" readonly class="form-control" id="group" placeholder="[Required]">
+    </div>
+    <div class="form-group">
+        <label for="avatar">Avatar</label>
+        <p><img class="avatar_photo" ng-src="{{urlData}}" ng-if="urlData" alt="Avatar" /></p>
+      </div>
+</form>
+<footer>
+    <a ui-sref="form.login" class="btn btn-secondary cancel">Cancel</a>
+    <button  class="btn btn-info submit">Submit</button>
+</footer>

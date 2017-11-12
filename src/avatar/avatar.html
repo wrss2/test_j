@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+      <label for="avatar">Avatar</label> User Avatar. It is recommended that you use a file with the GIF or PNG format. The recommended size is 512x512 pixels.
+    </div>  
+    <div class="form-group avatar_place"> 
+            <img class="avatar_photo" ng-src="{{urlData}}" ng-if="urlData" alt="Avatar" />
+    </div>  
+    <div class="form-group" > 
+        <button class="btn btn-secondary cancel" ng-click="vm.popup()" >Upload Avatar </button>
+    </div>
+</form>
+  <footer>
+      <a ui-sref="form.login" class="btn btn-secondary cancel">Cancel</a>
+      <button ng-click="vm.next()" class="btn btn-primary next">Next</button> 
+  </footer>

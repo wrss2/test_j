@@ -1,0 +1,20 @@
+<div ng-if="popup_show" class="popup_main" >
+        <div class="popup_inner">
+            <article> 
+                <header>Avatar</header>
+                <section>
+                    <p>User Avatar. It is recommended that you use a file with the GIF or PNG format. The recommended size is 512x512 pixels.</p>
+                    <div class="form-group"> 
+                            <input accept="image/png,image/gif,image/jpeg"   type="file"  id="file" class="inputfile" fileread="vm.uploadme" choosen="file_choosen"   >
+                            <label for="file" class="btn btn-secondary">Choose a file</label>
+                            <span ng-if="!file_choosen" class="file_text">No File Chosen</span> 
+                            <span ng-if="file_choosen" class="file_text">File Chosen</span>       
+                    </div>
+                </section>
+                <footer>
+                    <button class="btn btn-lg btn-secondary cancel" ng-click="vm.popup_hide()" >Cancel</button>
+                    <button class="btn btn-lg btn-info upload" ng-click="vm.upload()" >Upload</button>
+                </footer>
+             </article>
+        </div>
+</div>   

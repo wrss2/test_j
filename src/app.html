@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row" id="main-nav">
+        <div class="col-12">
+            <img src="./images/icon.png" alt="Icon" />Add new User Profile
+        </div>  
+    </div>
+   
+    <div class="row">
+        <div class="col-2" id="left_column">
+            <ul>
+              <li ng-class="vm.getClass('/form/login')" ><a  href="#" >Add login details</a></li>
+              <li ng-class="vm.getClass('/form/group')" ><a href="#">Select the user group</a></li>
+              <li ng-class="vm.getClass('/form/avatar')"><a href="#">Add an avatar</a></li>
+              <li ng-class="vm.getClass('/form/submit')"><a href="#">Submit the form</a></li>    
+            </ul>     
+            <img class="app_icon" src="./images/app-icon.png" alt="App Icon" />     
+        </div>
+        <div class="col-10" id="right_column">
+            <div ui-view="form" ></div>              
+        </div>
+    </div>
+</div>
+<div ui-view="popup"></div>  
+
+
+  

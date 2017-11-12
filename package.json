@@ -1,0 +1,21 @@
+{
+  "name": "plunk2",
+  "version": "1.0.0",
+  "description": "# All mockups and assets can be found here: https://www.dropbox.com/sh/36hwzr44x4lths9/AACDZ-H-JFXopzRDIIZ0s0n_a?dl=0 # Font: ProximaNova",
+  "main": "config.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+	"start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.51",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-typescript": "^3.0.8",
+    "typescript": "^2.6.1",
+    "typings": "^2.1.1"
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="." />
+    <title>Modern Angular 1.66 Playground</title>
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.min.css" />
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <script src="https://unpkg.com/systemjs@0.19.31/dist/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+    System.import('app')
+      .catch(console.error.bind(console));
+  </script>
+  </head>
+  <body>
+      <div ui-view>loading...</div>
+  </body>
+</html>
