@@ -16,7 +16,7 @@ button:hover{
 }
 .container-fluid{
   border-top: 1px solid #fcfdfe;
-}
+} 
 
 .btn-secondary{
   background: rgba(255,255,255,1);
@@ -27,8 +27,10 @@ button:hover{
   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 49%, rgba(248,248,248,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 49%, rgba(248,248,248,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
-  color: #969696;
-
+  color: #6f6e6e ;
+  &:hover{ 
+    color: #313131 ;
+  }
 }
 
 .btn-secondary.btn-lg{
@@ -107,7 +109,7 @@ button:hover{
   overflow: hidden;
   border-right:1px solid #e7e7e7;
   height: 91vh; 
-  background: url("../images/side-background.png") repeat; 
+  background: url("../images/side-background.png") repeat;   
   ul{
     margin: 43px 0 0 -5px;
     li{
@@ -139,6 +141,7 @@ button:hover{
   form{
     margin-top: 45px;
     color: #797979;
+    font-size: 0.9rem;
     select{
       color:#000; 
     }

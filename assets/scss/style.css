@@ -24,7 +24,9 @@ button:hover {
   background: -ms-linear-gradient(top, white 0%, #fcfcfc 49%, #f8f8f8 100%);
   background: linear-gradient(to bottom, white 0%, #fcfcfc 49%, #f8f8f8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
-  color: #969696; }
+  color: #6f6e6e; }
+  .btn-secondary:hover {
+    color: #313131; }
 
 .btn-secondary.btn-lg {
   color: #666666;
@@ -113,7 +115,8 @@ button:hover {
   padding-right: 30px; }
   #right_column form {
     margin-top: 45px;
-    color: #797979; }
+    color: #797979;
+    font-size: 0.9rem; }
     #right_column form select {
       color: #000; }
     #right_column form label {

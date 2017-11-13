@@ -25,7 +25,7 @@ export default class AvatarComponentController {
   
     $onInit():void {
       console.log("Avatar");
-      this.$scope.urlData = './images/avatar.png'
+      this.$scope.urlData = './assets/images/avatar.png'
     }
 
     next():void{
