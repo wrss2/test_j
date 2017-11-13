@@ -116,7 +116,7 @@ button:hover {
   #right_column form {
     margin-top: 45px;
     color: #797979;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
     #right_column form select {
       color: #000; }
     #right_column form label {
@@ -124,7 +124,7 @@ button:hover {
       color: #55637f;
       font-weight: bold;
       margin-right: 20px;
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-bottom: 4px; }
     #right_column form input {
       border-color: #d2d6dd; }
