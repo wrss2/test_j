@@ -2,7 +2,7 @@
     <h4>Choose the User Group</h4>
     <div class="form-group">
       <label for="group">User Group</label> User Group to add the users to
-      <select required class="form-control" id="group" name="group"  ng-model="group_value" ng-options="item.name for item in group" >
+      <select required class="form-control" id="group" name="group"  ng-model="group_value"   ng-options="item as item.name for item in group" >
           <option value="">Choose group</option>
       </select>
       <span class="error" ng-show="appleForm.group.$error.required">Required!</span>

@@ -16,12 +16,12 @@ export default class PopupComponentController {
     public static $inject = ["$scope", "$http", "$q", "$state" , "$rootScope", "$location" ];
   
     constructor(
-      private $scope:IScope,
+      private $scope: ng.IScope,
       private $http: ng.IHttpService,
       private $q: ng.IQService,
       private $state,
       private $rootScope,
-      private $location:ILocationService
+      private $location:ng.ILocationService
     ) {
    
       this.$scope.popup_show = false;
